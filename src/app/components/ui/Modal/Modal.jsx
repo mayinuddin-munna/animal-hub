@@ -38,7 +38,6 @@ const Modal = () => {
           >
             <div className="fixed inset-0 bg-black/25" />
           </Transition.Child>
-
           <div className="fixed inset-0 overflow-y-auto">
             <div className="flex min-h-full items-center justify-center p-4 text-center">
               <Transition.Child
@@ -50,27 +49,44 @@ const Modal = () => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title
-                    as="h3"
-                    className="text-lg font-medium leading-6 text-gray-900"
-                  >
-                    Payment successful
+                <Dialog.Panel className="w-full max-w-sm transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title className="text-lg text-gray-900">
+                    Add Animal
                   </Dialog.Title>
-                  <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Your payment has been successfully submitted. We’ve sent
-                      you an email with all of the details of your order.
-                    </p>
+                  <div className="mt-4">
+                    <input
+                      type="text"
+                      placeholder="Animal name"
+                      className="w-full py-3 px-3 rounded-md outline-none bg-[#F2F2F2] text-black"
+                    />
+                  </div>
+                  <div className="mt-4 flex justify-between items-center bg-slate-100">
+                    <label
+                      htmlFor="fileInput"
+                      className="w-full py-3 px-3 rounded-md outline-none  cursor-pointer"
+                    >
+                      <span className="text-gray-600">Image</span>
+                    </label>
+                    <div className="flex-shrink-0">
+                      <input
+                        type="file"
+                        id="fileInput"
+                        className="hidden"
+                        aria-label="Upload file"
+                      />
+                      <span className="py-2 px-4 rounded-md bg-[#CCC] text-white mr-2">
+                        Upload
+                      </span>
+                    </div>
                   </div>
 
                   <div className="mt-4">
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      className="w-full rounded-md border border-transparent bg-[#101010] text-[18px] px-4 py-4 text-sm text-white hover:bg-black"
                       onClick={closeModal}
                     >
-                      Got it, thanks!
+                      Create Animal!
                     </button>
                   </div>
                 </Dialog.Panel>
