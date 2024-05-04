@@ -4,6 +4,8 @@ import React, { Fragment, useState } from "react";
 
 const CategoryModal = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [image, setImage] = useState();
+
   function closeModal() {
     setIsOpen(false);
   }
@@ -11,6 +13,7 @@ const CategoryModal = () => {
   function openModal() {
     setIsOpen(true);
   }
+  
 
   return (
     <>
@@ -18,7 +21,7 @@ const CategoryModal = () => {
         <button
           type="button"
           onClick={openModal}
-          className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-full lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30"
+          className="category-cart"
         >
           Add Category
         </button>

@@ -1,0 +1,72 @@
+{
+  "categories": [
+    {
+      "name": "Land Animal",
+      "species": [
+        {
+          "id": 1,
+          "name": "Elephant"
+        },
+        {
+          "id": 2,
+          "name": "Hors"
+        },
+        {
+          "Fox": 3,
+          "name": "Tiger"
+        }
+      ]
+    },
+    {
+      "name": "Bird",
+      "species": [
+        {
+          "id": 1,
+          "name": "Cockatoo"
+        },
+        {
+          "id": 2,
+          "name": "Phoenix"
+        },
+        {
+          "Fox": 3,
+          "name": "Sparrow"
+        }
+      ]
+    },
+    {
+      "name": "Fish",
+      "species": [
+        {
+          "id": 1,
+          "name": "Tuna"
+        },
+        {
+          "id": 2,
+          "name": "Red Fish"
+        },
+        {
+          "Fox": 3,
+          "name": "Pomfret"
+        }
+      ]
+    },
+    {
+      "name": "Insect",
+      "species": [
+        {
+          "id": 1,
+          "name": "Lady Bug"
+        },
+        {
+          "id": 2,
+          "name": "Butterfly"
+        },
+        {
+          "Fox": 3,
+          "name": "Bee"
+        }
+      ]
+    }
+  ]
+}

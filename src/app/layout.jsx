@@ -2,7 +2,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Animal Hub",
-  description: "Created by children.",
+  description: "Created for children.",
 };
 
 export default function RootLayout({ children }) {
