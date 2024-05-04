@@ -1,10 +1,9 @@
-"use client";
-import React, { Fragment, useState } from "react";
+'use client'
 import { Dialog, Transition } from "@headlessui/react";
+import React, { Fragment, useState } from "react";
 
-const Modal = () => {
-  let [isOpen, setIsOpen] = useState(false);
-
+const CategoryModal = () => {
+  const [isOpen, setIsOpen] = useState(false);
   function closeModal() {
     setIsOpen(false);
   }
@@ -51,42 +50,22 @@ const Modal = () => {
               >
                 <Dialog.Panel className="w-full max-w-sm transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title className="text-lg text-gray-900">
-                    Add Animal
+                    Add Category
                   </Dialog.Title>
                   <div className="mt-4">
                     <input
                       type="text"
-                      placeholder="Animal name"
+                      placeholder="Name"
                       className="w-full py-3 px-3 rounded-md outline-none bg-[#F2F2F2] text-black"
                     />
                   </div>
-                  <div className="mt-4 flex justify-between items-center bg-slate-100">
-                    <label
-                      htmlFor="fileInput"
-                      className="w-full py-3 px-3 rounded-md outline-none  cursor-pointer"
-                    >
-                      <span className="text-gray-600">Image</span>
-                    </label>
-                    <div className="flex-shrink-0">
-                      <input
-                        type="file"
-                        id="fileInput"
-                        className="hidden"
-                        aria-label="Upload file"
-                      />
-                      <span className="py-2 px-4 rounded-md bg-[#CCC] text-white mr-2">
-                        Upload
-                      </span>
-                    </div>
-                  </div>
-
                   <div className="mt-4">
                     <button
                       type="button"
                       className="w-full rounded-md border border-transparent bg-[#101010] text-[18px] px-4 py-4 text-sm text-white hover:bg-black"
                       onClick={closeModal}
                     >
-                      Create Animal!
+                      Save
                     </button>
                   </div>
                 </Dialog.Panel>
@@ -99,4 +78,4 @@ const Modal = () => {
   );
 };
 
-export default Modal;
+export default CategoryModal;

@@ -1,4 +1,5 @@
-import Modal from "../Modal/Modal";
+import AnimalModal from "../Modal/AnimalModal";
+import CategoryModal from "../Modal/categoryModal";
 
 const Animal = () => {
   return (
@@ -9,10 +10,10 @@ const Animal = () => {
         </div>
         <div className="fixed gap-5 left-0 flex w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <div>
-            <Modal />
+            <AnimalModal />
           </div>
           <div>
-            <Modal />
+            <CategoryModal />
           </div>
         </div>
       </div>
